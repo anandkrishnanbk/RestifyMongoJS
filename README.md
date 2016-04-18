@@ -2,7 +2,7 @@
 RestifyMongoJS is a very simple sample restify mongojs project for CRUD Operations.
 
 ### Install the project dependencies
-'npm install' to install dependencies.
+`npm install` to install dependencies.
 
 ### Run the project
 `gulp serve`
