@@ -8,12 +8,13 @@
     <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./bower_components/angular-resource/angular-resource.min.js"></script>
     <script type="text/javascript" src="products.controller.js" ></script>
+    <script type="text/javascript" src="products.factory.js" ></script>
 </head>
-<body ng-controller="productController">
+<body ng-app="products.controller" ng-controller="productController">
 <div class="panel panel-primary">
     <h3 class="panel-heading">Products</h3>
-    <ng-include src="tableView.html" ng-show="'listView' == myView"></ng-include>
-    <ng-include src="editorView.html" ng-show="'editView'== myView"></ng-include>
+    <ng-include src="'tableView.html'" ng-show="'listView' == myView"></ng-include>
+    <ng-include src="'editView.html'" ng-show="'editView' == myView"></ng-include>
 </div>
 </body>
 </html>

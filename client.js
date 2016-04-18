@@ -1,11 +1,12 @@
-/**
+/*
+/!**
  *Restify JSON client ffor testing purposes to check sample request responses for get,post,put,delete
  * @type {*|exports|module.exports}
- */
+ *!/
 var restify=require('restify');
 var server=require('./server');
 
-var client =restify.createJSONClient({url:'http://localhost:3000'});
+var client =restify.createJSONClient({url:'http://localhost:3002'});
 
 var testProducts = {"id" : "105", "gender" : "Female", "first_name" : "Nandana",
     "last_name" : "Soman", "email" : "nandana@gmail.com",
@@ -73,3 +74,4 @@ client.get('/products/105',function(err,req,res,data)
 });
 
 module.exports= server;
+*/
