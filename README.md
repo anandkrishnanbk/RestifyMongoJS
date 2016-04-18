@@ -12,6 +12,6 @@ Set up mongodb on your own and create 'product' db and 'products' user collectio
 
 Then using my installed restify client and restify server code, we can do get,post,put,delete operations.
 
-Added sample UI to enter new Product and then query,view,edit,delete products.
+Added sample UI to enter new Product and then we can query,view,edit,delete products.
 
 
