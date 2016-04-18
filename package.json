@@ -10,6 +10,9 @@
   "author": "anand",
   "license": "ISC",
   "devDependencies": {
+    "bower": "^1.7.9",
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
     "mongojs": "^2.3.0",
     "restify": "^4.0.3"
   }

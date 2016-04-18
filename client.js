@@ -1,3 +1,7 @@
+/**
+ *Restify JSON client ffor testing purposes to check sample request responses for get,post,put,delete
+ * @type {*|exports|module.exports}
+ */
 var restify=require('restify');
 var server=require('./server');
 

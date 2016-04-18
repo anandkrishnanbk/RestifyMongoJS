@@ -1,0 +1,29 @@
+<div class="panel-body">
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Gender</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>email</th>
+            <th>ip address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in products">
+            <td>{{item.gender}}</td>
+            <td>{{item.firstname}}</td>
+            <td>{{item.lastname}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.address}}</td>
+            <td><button class="btn btn-xs btn-primary" ng-click="deleteDetails()"></button>Delete</td>
+            <td><button class="btn btn-xs btn-primary" ng-click="editDetails()"></button>Edit/New</td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <button class="btn btn-xs btn-primary">Refresh</button>
+        <button class="btn brn-xs btn-primary">New</button>
+    </div>
+</div>
