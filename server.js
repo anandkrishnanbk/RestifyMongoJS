@@ -1,7 +1,7 @@
 var restify=require('restify');
 var mongojs=require('mongojs');
 
-var db =mongojs('productdb',['products'])
+var db =mongojs('productdb',['products']);
 
 var server = restify.createServer();
 server.use(restify.acceptParser(server.acceptable));
