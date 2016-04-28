@@ -15,6 +15,10 @@ function productController(productsFactory,$scope)
             $scope.myView = "listView";
             $scope.products = resp;
 
+        },function(error)
+        {
+            console.log('error-'+error);
+
         });
     };
     $scope.editDetails=function()
@@ -25,6 +29,26 @@ function productController(productsFactory,$scope)
     {
         $scope.myView='tableView';
     }
+    $scope.saveEdit=function(product)
+    {
+       productsFactory.saveProduct(product).then(function(newProduct)
+       {
+           $scope.products.push(newProduct);
+           $scope.myView='tableView';
+       },function(error)
+       {
+          console.log(error);
+       });
+
+    }
+    $scope.deleteDetails= function(product)
+    {
+        productsFactory.deleteProduct(product).then(function()
+        {
+            $scope.products.splice($scope.products.indexOf(product),1);
+
+        });
+    };
     $scope.listProducts();
 
 }
