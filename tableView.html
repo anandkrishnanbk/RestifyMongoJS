@@ -8,20 +8,23 @@
             <th>Last Name</th>
             <th>email</th>
             <th>ip address</th>
+            <th>price</th>
             <th></th>
             <th></th>
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="item in products | limitTo:10">
+        <tr ng-repeat="item in products | limitTo:-10">
             <td>{{item.id}}</td>
             <td>{{item.gender}}</td>
             <td>{{item.first_name}}</td>
             <td>{{item.last_name}}</td>
             <td>{{item.email}}</td>
             <td>{{item.ip_address}}</td>
+            <td>{{item.price | currency}}</td>
             <td><button class="btn btn-xs btn-primary" ng-click="deleteDetails(item)">Delete</button></td>
-            <td><button class="btn btn-xs btn-primary" ng-click="editDetails()">Edit/New</button></td>
+            <td><button class="btn btn-xs btn-primary" ng-click="editDetails(item)">Edit/New</button></td>
+            <td><increment item="item" property-name="item.price" restful="true" method-name="$save" /></td>
         </tr>
         </tbody>
     </table>

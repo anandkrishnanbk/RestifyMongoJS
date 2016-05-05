@@ -24,14 +24,18 @@
             saveProduct: function (product) {
                 return new productsResource(product).$save();
             },
+            cancelEditProduct: function()
+            {
+
+            },
             getOneProduct: function () {
 
             },
-            updateProduct: function () {
-
+            updateProduct: function (product) {
+                product.$save();
             },
             deleteProduct: function (product) {
-                return new productsResource(product).$delete();
+                return product.$delete();
             }
         }
     }

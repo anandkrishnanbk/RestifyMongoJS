@@ -42,11 +42,11 @@ server.post('/products/:id', function (req, res, next) {
     var product = req.body;
     /*console.log("params-"+req.params);
     console.log("body-"+req.body);*/
-    var testProducts = {"id" : "105", "gender" : "Female", "first_name" : "Nandana",
+   /* var testProducts = {"id" : "105", "gender" : "Female", "first_name" : "Nandana",
         "last_name" : "Soman", "email" : "nandana@gmail.com",
         "ip_address" : "255.45.255.45" };
     console.log(JSON.stringify(product));
-    console.log(JSON.stringify(testProducts));
+    console.log(JSON.stringify(testProducts));*/
     db.products.save(product, function (err, data) {
         res.writeHead(200, {'Content-Type': 'application/json;charset=utf-8'});
         res.end(JSON.stringify(data));

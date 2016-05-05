@@ -13,8 +13,8 @@
 <body ng-app="products.controller" ng-controller="productController">
 <div class="panel panel-primary">
     <h3 class="panel-heading">Products</h3>
-    <ng-include src="'tableView.html'" ng-show="'listView' == 'noView'"></ng-include>
-    <ng-include src="'editView.html'" ng-show="'editView' == 'editView'"></ng-include>
+    <ng-include src="'tableView.html'" ng-show="'listView' == myView"></ng-include>
+    <ng-include src="'editView.html'" ng-show="'editView' == myView"></ng-include>
 </div>
 </body>
 </html>
