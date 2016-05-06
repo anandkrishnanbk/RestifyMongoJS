@@ -19,4 +19,3 @@ Using mongojs to access mongodb.
 
 * Added sample UI to enter new Product and then we can query,view,edit,delete products.
 
-
