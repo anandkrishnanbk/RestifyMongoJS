@@ -7,7 +7,7 @@ RestifyMongoJS is a  simple sample angularjs,restify,mongojs project for CRUD Op
 ### Run the project
 `mongod --dbpath <path to data>` to start mongodb server
 
-`node server.js` in separate terminal to start restify server
+`nodemon server.js` in separate terminal to start restify server
 
 `gulp serve` to run client using browser sync
 
