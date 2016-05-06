@@ -1,6 +1,6 @@
 ### RestifyMongoJS
-RestifyMongoJS is a very simple sample angularjs,restify,mongojs project for CRUD Operations.
-angularjs as front end client,restify as middleware and mongojs to communicate with mongodb.
+RestifyMongoJS is a very simple sample `angularjs`,`restify`,`mongojs` project for CRUD Operations.
+angularjs as front end client, restify as middleware and mongojs to communicate with mongodb.
 
 ### Install the project dependencies
 `npm install` to install dependencies.
